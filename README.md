@@ -6,7 +6,7 @@ Escolha um domínio de seu interesse: Campeonato Brasileiro
 
 Entregas
 
-01. Uma descrição do cenário com regras, pessoas, objetos, etc. envolvidos no domínio
+01. Uma descrição do cenário com regras, pessoas, objetos, etc. envolvidos no domínio: https://docs.google.com/document/d/1l-3QEu6bF7eJXGGuHWl7L2gJunBZA9fUqzds_CsjDaI/edit?usp=sharing
 
 02. O modelo conceitual do cenário definido: pelo menos 15 entidades
 
