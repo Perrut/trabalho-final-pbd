@@ -139,7 +139,8 @@ create table EquipeCampeonatoTemporada (
 	id bigserial primary key,
 	equipe_id bigint not null,
 	campeonato_id bigint not null,
-	temporada_id bigint not null
+	temporada_id bigint not null,
+	pontos integer default 0
 );
 
 alter table Gol
