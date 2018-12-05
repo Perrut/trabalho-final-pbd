@@ -14,7 +14,7 @@ create table Gol (
 create table Jogador (
 	id bigserial primary key,
 	nome varchar(255),
-	data_nascimento DATE NOT NULL DEFAULT CURRENT_DATE,
+	data_nascimento date not null,
 	posicao_id bigint not null
 );
 
@@ -52,6 +52,7 @@ create table Jogada (
 	jogo_id bigint not null,
 	executor_id bigint not null,
 	receptor_id bigint,
+	punicao_id integer not null,
 	tipo_jogada_id bigint not null
 );
 
@@ -248,6 +249,13 @@ alter table Jogada
 add constraint jogada_tipo_jogada_fk
 foreign key (tipo_jogada_id)
 references TipoJogada(id)
+on update cascade
+on delete cascade;
+
+alter table Jogada
+add constraint jogada_punicao_fk
+foreign key (punicao_id)
+references Punicao(id)
 on update cascade
 on delete cascade;
 
