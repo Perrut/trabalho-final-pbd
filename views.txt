@@ -1,0 +1,3 @@
+- Primeira view: Classificação do campeonato
+- Segunda view: Rodadas
+- Terceira view: Jogadores das equipes
