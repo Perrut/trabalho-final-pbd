@@ -132,9 +132,212 @@ create table Estadio (
 	estado_id bigint not null
 );
 
----ALTER TABLE Gol
----ADD CONSTRAINT artilheiro_fk
----FOREIGN KEY (artilheiro_id)
----REFERENCES Jogador(id)
----on delete cascade
----on update cascade;
+alter table Gol
+add constraint gol_jogo_fk
+foreign key (jogo_id)
+references Jogo(id)
+on update cascade
+on delete cascade;
+
+alter table Gol 
+add constraint gol_artilheiro_fk
+foreign key (artilheiro_id)
+references Jogador(id)
+on update cascade
+on delete cascade;
+
+alter table Gol 
+add constraint gol_assistencia_fk
+foreign key (assistencia_id)
+references Jogador(id)
+on update cascade
+on delete cascade;
+
+alter table Jogador
+add constraint jogador_posicao_fk
+foreign key (posicao_id)
+references Posicao(id)
+on update cascade
+on delete restrict;
+
+alter table Arbitro
+add constraint arbitro_estado_fk
+foreign key (estado_id)
+references Estado(id)
+on update cascade
+on delete restrict;
+
+alter table Arbitro
+add constraint arbitro_tipo_arbitro_fk
+foreign key (tipo_arbitro_id)
+references TipoArbitro(id)
+on update cascade
+on delete cascade;
+
+alter table Jogo
+add constraint jogo_arbitro_fk
+foreign key (arbitro_id)
+references Arbitro(id)
+on update cascade
+on delete restrict;
+
+alter table Jogo
+add constraint jogo_auxiliar_1_fk
+foreign key (auxiliar_1_id)
+references Arbitro(id)
+on update cascade
+on delete restrict;
+
+alter table Jogo
+add constraint jogo_auxiliar_2_fk
+foreign key (auxiliar_2_id)
+references Arbitro(id)
+on update cascade
+on delete restrict;
+
+alter table Jogo
+add constraint jogo_quarto_arbitro_fk
+foreign key (quarto_arbitro_id)
+references Arbitro(id)
+on update cascade
+on delete restrict;
+
+alter table Jogo
+add constraint jogo_rodada_fk
+foreign key (rodada_id)
+references Rodada(id)
+on update cascade
+on delete cascade;
+
+alter table Jogo
+add constraint jogo_mandante_fk
+foreign key (mandante_id)
+references Equipe(id)
+on update cascade
+on delete cascade;
+
+alter table Jogo
+add constraint jogo_visitante_fk
+foreign key (visitante_id)
+references Equipe(id)
+on update cascade
+on delete cascade;
+
+alter table Jogada
+add constraint jogada_jogo_fk
+foreign key (jogo_id)
+references Jogo(id)
+on update cascade
+on delete cascade;
+
+alter table Jogada
+add constraint jogada_executor_fk
+foreign key (executor_id)
+references Jogador(id)
+on update cascade
+on delete cascade;
+
+alter table Jogada
+add constraint jogada_receptor_fk
+foreign key (receptor_id)
+references Jogador(id)
+on update cascade
+on delete cascade;
+
+alter table Jogada
+add constraint jogada_tipo_jogada_fk
+foreign key (tipo_jogada_id)
+references TipoJogada(id)
+on update cascade
+on delete cascade;
+
+alter table Campeonato
+add constraint campeonato_organizador_fk
+foreign key (organizador_id)
+references Organizador(id)
+on update cascade
+on delete restrict;
+
+alter table Campeonato
+add constraint campeonato_temporada_fk
+foreign key (temporada_id)
+references Temporada(id)
+on update cascade
+on delete cascade;
+
+alter table Rodada
+add constraint rodada_campeonato_fk
+foreign key (campeonato_id)
+references Campeonato(id)
+on update cascade
+on delete cascade;
+
+alter table JogadorTemporadaEquipe 
+add constraint jogador_temporada_equipe_equipe_fk
+foreign key (equipe_id)
+references Equipe(id)
+on update cascade
+on delete cascade;
+
+alter table JogadorTemporadaEquipe 
+add constraint jogador_temporada_equipe_jogador_fk
+foreign key (jogador_id)
+references Jogador(id)
+on update cascade
+on delete cascade;
+
+alter table JogadorTemporadaEquipe 
+add constraint jogador_temporada_equipe_temporada_fk
+foreign key (temporada_id)
+references Temporada(id)
+on update cascade
+on delete cascade;
+
+alter table Organizador 
+add constraint organizador_estado_fk
+foreign key (estado_id)
+references Estado(id)
+on update cascade
+on delete cascade;
+
+alter table Equipe 
+add constraint equipe_estado_fk
+foreign key (estado_id)
+references Estado(id)
+on update cascade
+on delete cascade;
+
+alter table TreinadorTemporadaEquipe
+add constraint treinador_temporada_equipe_equipe_fk
+foreign key (equipe_id)
+references Equipe(id)
+on update cascade
+on delete cascade;
+
+alter table TreinadorTemporadaEquipe
+add constraint treinador_temporada_equipe_treinador_fk
+foreign key (treinador_id)
+references Treinador(id)
+on update cascade
+on delete cascade;
+
+alter table TreinadorTemporadaEquipe
+add constraint treinador_temporada_equipe_temporada_fk
+foreign key (temporada_id)
+references Temporada(id)
+on update cascade
+on delete cascade;
+
+alter table Treinador
+add constraint treinador_estado_fk
+foreign key (estado_id)
+references Estado(id)
+on update cascade
+on delete restrict;
+
+alter table Estadio
+add constraint estadio_estado_fk
+foreign key (estado_id)
+references Estado(id)
+on update cascade
+on delete restrict;
