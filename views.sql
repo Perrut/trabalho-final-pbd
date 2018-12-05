@@ -12,3 +12,10 @@ select J.nome, E.nome as equipe, T.ano as temporada from
 where JTE.saida is null and T.ano = date_part('year', CURRENT_DATE)
 order by E.nome asc;
 
+create or replace view classificacao_nos_campeonatos as
+select E.nome, ECT.pontos, T.ano from
+    Equipe as E inner join EquipeCampeonatoTemporada as ECT on E.id = ECT.equipe_id
+                inner join Campeonato as C on C.id = ECT.campeonato_id
+                inner join Temporada as T on T.id = ECT.temporada_id
+where T.ano = date_part('year', CURRENT_DATE)
+order by E.nome desc;
