@@ -294,6 +294,7 @@ INSERT INTO public.campeonato(
 	VALUES (3, 'Campeonato Brasileiro', 1);
 
 /*------------- Jogadores -------------- */
+/*---------------- MEI ------------------*/
 
 INSERT INTO public.jogador(
 	nome, data_nascimento, posicao_id)
@@ -317,28 +318,481 @@ INSERT INTO public.jogador(
 
 INSERT INTO public.jogador(
 	nome, data_nascimento, posicao_id)
-	VALUES ('Patrick', '1991-10-08', 2);
+	VALUES ('Bruno Henrique', '1988-11-18', 2);
 
 INSERT INTO public.jogador(
 	nome, data_nascimento, posicao_id)
-	VALUES ('Patrick', '1991-10-08', 2);
+	VALUES ('Dudu', '1991-12-12', 2);
 
 INSERT INTO public.jogador(
 	nome, data_nascimento, posicao_id)
-	VALUES ('Patrick', '1991-10-08', 2);
-
-
-INSERT INTO public.jogador(
-	nome, data_nascimento, posicao_id)
-	VALUES ('Patrick', '1991-10-08', 2);
+	VALUES ('Nenê', '1986-11-02', 2);
 
 INSERT INTO public.jogador(
 	nome, data_nascimento, posicao_id)
-	VALUES ('Patrick', '1991-10-08', 2);
+	VALUES ('Lenandro Bonfim', '1987-05-18', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Andrade', '1990-06-11', 2);
+
+				/*10*/
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Andrey', '1994-04-14', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Cuellar', '1992-11-13', 2);
+                
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Willian Maranhão', '1990-02-18', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Douglas', '1986-08-19', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Luan', '1994-07-06', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Lucas Paquetá', '1995-01-18', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Michel', '1989-12-12', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Clayton', '1996-11-02', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Bruno Veras', '1996-01-29', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Matheus Perut', '1994-02-23', 2);
+
+	
+			/*10*/
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Nicão', '1992-09-10', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Bruno Hitter', '1997-05-08', 2);
+                
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Sanches', '1993-04-07', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Lucas Silva', '1988-08-15', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Renato Abreu', '1989-11-08', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Ibson', '1988-11-18', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Abedi', '1991-12-12', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Philippe Coutinho', '1995-11-02', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Morais', '1989-05-18', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Perdigão', '1982-06-11', 2);
+
+				/*10*/
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Paulo Henrique Ganso', '1992-09-10', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Kaka', '1997-05-08', 2);
+                
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Zé Roberto', '1993-04-07', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Ronaldinho Gaucho', '1988-08-15', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Edmilson', '1989-11-08', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Emerson', '1988-11-18', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Casemiro', '1991-12-12', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Arthur', '1996-11-02', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Allan', '1989-05-18', 2);
+
+INSERT INTO public.jogador(
+	nome, data_nascimento, posicao_id)
+	VALUES ('Souza', '1982-06-11', 2);
+
+/*------------------- DEF -------------------*/
+
+	INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Guga', '1992', 3);
+    
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Pedro Geromel', '1992-11-11', 3); 
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Vitor Cuesta', '1989-09-22', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Kanneman', '1989-10-14', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Rodrigo Moledo', '1992-11-09', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Leo Duarte', '1998-01-24', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Gum', '1989-07-04', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Kanneman', '1989-10-14', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Leandro Eusebio', '1987-02-24', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Gustavo Geladeira', '1992-08-12', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Paulao', '1990-10-29', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Chicao', '1986-11-01', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Luiz Gustavo', '1996-05-11', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Matheus Ferraz', '1990-04-18', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Ronaldo Angelim', '1987-12-24', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Rodrigo Caio', '1996-02-21', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Carli', '1991-12-11', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Miranda', '1987-01-14', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Dante', '1988-09-05', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Breno', '1990-12-10', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Celove', '1991-11-10', 3);
+    /*20*/
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Leo Moura', '1987-01-15', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Juan', '1988-03-11', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Leo Pele', '1990-12-21', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Sander', '1992-03-01', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Jorge', '1999-06-13', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Rene', '1990-11-29', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Trauco', '1993-08-07', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Rodinei', '1989-12-17', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Para', '1989-04-10', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Mariano', '1991-01-30', 3);
+    /*30*/
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Ruy', '1987-12-04', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Bruno Cortez', '1990-06-16', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Marcelo', '1989-10-21', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Henrique', '1990-09-09', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Rafael Galhardo', '1992-12-14', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Iago', '1994-08-18', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Mayke', '1990-07-19', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Fagner', '1988-07-22', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Felipe Luis', '1988-06-14', 3);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Alex Sandro', '1992-08-12', 3);
+
+/*---------------- GOL ------------------*/
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Marcelo Lomba', '1988-03-01', 4);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Martin Silva', '1986-12-11', 4);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Diego Alves', '1985-10-03', 4);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Cesar', '1998-10-03', 4);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Julio Cesar', '1990-11-06', 4);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Victor', '1988-10-23', 4);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Fernando Prass', '1986-02-13', 4);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Cassio', '1988-06-30', 4);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Muralha', '1990-10-08', 4);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Cesar', '1998-10-03', 4);
 
 
+/*-------------- ATA ---------------*/
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Pablo', '1994-02-24', 1);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Gabigol', '1995-11-24', 1);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Uribe', '1990-09-22', 1);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Edmundo', '1987-12-29', 1);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Nico Lopez', '1989-07-09', 1);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Nilmar', '1989-11-18', 1);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Fellype Gabriel', '1990-07-05', 1);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Malcom', '1990-04-23', 1);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Lincoln', '1999-03-12', 1);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Helinho', '2001-03-11', 1);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Pedro', '1999-11-27', 1);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Marcos Junior', '1995-03-01', 1);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Paulinho', '2000-09-22', 1);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Joel', '1990-06-12', 1);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Luan', '1998-08-06', 1);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Damiao', '1993-11-29', 1);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Romero', '1990-12-03', 1);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Fred', '1987-03-04', 1);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'Rafael Sobis', '1988-10-24', 1);
+
+    INSERT INTO public.jogador(
+nome, data_nascimento, posicao_id)
+VALUES ( 'William Bigode', '1989-03-09', 1);
 
 
+/*---------------TreinadorXEquipe------------*/
 
+INSERT INTO public.treinadortemporadaequipe(
+	equipe_id, treinador_id, temporada_id, entrada, saida)
+	VALUES (1, 1, 1, '2018-01-01');
 
-/*10*/
+INSERT INTO public.treinadortemporadaequipe(
+	equipe_id, treinador_id, temporada_id, entrada, saida)
+	VALUES (2, 2, 1, '2017-01-01');
+
+INSERT INTO public.treinadortemporadaequipe(
+	equipe_id, treinador_id, temporada_id, entrada, saida)
+	VALUES (3, 3, 1, '2016-01-01');
+
+INSERT INTO public.treinadortemporadaequipe(
+	equipe_id, treinador_id, temporada_id, entrada, saida)
+	VALUES (4, 4, 1, '2018-01-01');
+
+INSERT INTO public.treinadortemporadaequipe(
+	equipe_id, treinador_id, temporada_id, entrada, saida)
+	VALUES (5, 5, 1, '2018-01-01');
+
+INSERT INTO public.treinadortemporadaequipe(
+	equipe_id, treinador_id, temporada_id, entrada, saida)
+	VALUES (6, 6, 1, '2017-01-01');
+
+INSERT INTO public.treinadortemporadaequipe(
+	equipe_id, treinador_id, temporada_id, entrada, saida)
+	VALUES (7, 7, 1, '2017-01-01');
+
+INSERT INTO public.treinadortemporadaequipe(
+	equipe_id, treinador_id, temporada_id, entrada, saida)
+	VALUES (8, 8, 1, '2018-01-01');
+
+INSERT INTO public.treinadortemporadaequipe(
+	equipe_id, treinador_id, temporada_id, entrada, saida)
+	VALUES (9, 9, 1, '2018-01-01');
+
+INSERT INTO public.treinadortemporadaequipe(
+	equipe_id, treinador_id, temporada_id, entrada, saida)
+	VALUES (10, 10, 1, '2015-01-01');
