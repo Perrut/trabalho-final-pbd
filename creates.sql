@@ -8,7 +8,8 @@ create table Gol (
 	id bigserial primary key,
 	jogo_id bigint not null,
 	artilheiro_id bigint not null,
-	assistencia_id bigint
+	assistencia_id bigint,
+	momento_id bigint not null
 );
 
 create table Jogador (
@@ -53,7 +54,8 @@ create table Jogada (
 	executor_id bigint not null,
 	receptor_id bigint,
 	punicao_id integer not null,
-	tipo_jogada_id bigint not null
+	tipo_jogada_id bigint not null,
+	momento_id bigint not null
 );
 
 create table TipoJogada (
@@ -151,6 +153,13 @@ alter table Gol
 add constraint gol_assistencia_fk
 foreign key (assistencia_id)
 references Jogador(id)
+on update cascade
+on delete cascade;
+
+alter table Gol
+add constraint gol_momento_fk
+foreign key (momento_id)
+references Momento(id)
 on update cascade
 on delete cascade;
 
@@ -256,6 +265,13 @@ alter table Jogada
 add constraint jogada_punicao_fk
 foreign key (punicao_id)
 references Punicao(id)
+on update cascade
+on delete cascade;
+
+alter table Jogada
+add constraint jogada_momento_fk
+foreign key (momento_id)
+references Momento(id)
 on update cascade
 on delete cascade;
 
