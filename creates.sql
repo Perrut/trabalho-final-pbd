@@ -45,6 +45,8 @@ create table Jogo (
 	quarto_arbitro_id bigint not null,
 	rodada_id bigint not null,
 	mandante_id bigint not null,
+	mandante_placar integer not null default 0,
+	visitante_placar integer not null default 0,
 	visitante_id bigint not null
 );
 
