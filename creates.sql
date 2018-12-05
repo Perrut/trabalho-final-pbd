@@ -135,6 +135,13 @@ create table Estadio (
 	estado_id bigint not null
 );
 
+create table EquipeCampeonatoTemporada (
+	id bigserial primary key,
+	equipe_id bigint not null,
+	campeonato_id bigint not null,
+	temporada_id bigint not null
+);
+
 alter table Gol
 add constraint gol_jogo_fk
 foreign key (jogo_id)
@@ -365,3 +372,24 @@ foreign key (estado_id)
 references Estado(id)
 on update cascade
 on delete restrict;
+
+alter table EquipeCampeonatoTemporada
+add constraint equipe_campeonato_temporada_equipe_fk
+foreign key (equipe_id)
+references Equipe(id)
+on update cascade
+on delete cascade;
+
+alter table EquipeCampeonatoTemporada
+add constraint equipe_campeonato_temporada_campeonato_fk
+foreign key (campeonato_id)
+references Campeonato(id)
+on update cascade
+on delete cascade;
+
+alter table EquipeCampeonatoTemporada
+add constraint equipe_campeonato_temporada_temporada_fk
+foreign key (temporada_id)
+references Temporada(id)
+on update cascade
+on delete cascade;
