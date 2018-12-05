@@ -18,7 +18,7 @@ BEGIN
  RETURN NEW;
 END;
 $BODY$
-LANGUAGE plpgsql
+LANGUAGE plpgsql;
 
 CREATE TRIGGER atualizacao_placar
   after insert
