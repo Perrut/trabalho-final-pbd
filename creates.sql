@@ -143,6 +143,15 @@ create table EquipeCampeonatoTemporada (
 	pontos integer default 0
 );
 
+create table JogadorCampeonato (
+	id bigserial primary key,
+	jogador_id bigint not null,
+	campeonato_id bigint not null,
+	amarelos integer not null default 0,
+	vermelhor integer not null default 0,
+	suspenso boolean not null default false
+);
+
 alter table Gol
 add constraint gol_jogo_fk
 foreign key (jogo_id)
@@ -392,5 +401,19 @@ alter table EquipeCampeonatoTemporada
 add constraint equipe_campeonato_temporada_temporada_fk
 foreign key (temporada_id)
 references Temporada(id)
+on update cascade
+on delete cascade;
+
+alter table JogadorCampeonato
+add constraint jogador_campeonato_jogador_fk
+foreign key (jogador_id)
+references Jogador(id)
+on update cascade
+on delete cascade;
+
+alter table JogadorCampeonato
+add constraint jogador_campeonato_campeonato_fk
+foreign key (campeonato_id)
+references Campeonato(id)
 on update cascade
 on delete cascade;
